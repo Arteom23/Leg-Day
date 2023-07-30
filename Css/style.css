@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto+Serif:wght@400;500;600;800&family=Shrikhand&display=swap');
+/* ALl Common Css :start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    line-height: 0.8;
+    display: inline-block;
+}
+
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ALl Common Css :end */
+
+.back_to_top{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+.back_to_top img{
+    width: 70px;
+    height: 130px;
+    filter: invert(88%) sepia(63%) saturate(4197%) hue-rotate(171deg) brightness(98%) contrast(101%);
+}
+/* Header Part :start */
+
+#navbar{
+    width: 100dvw;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    top: 0;
+    left: 0;
+    z-index: 7777;
+}
+.nav_hide{
+    transform: translateY(-200px);
+    transition:all linear 0.4s;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:column ;
+}
+.logo{
+    width: 90px ;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+cursor: pointer;
+}
+.logo img{
+    width: 130%;
+    height: 140%;
+    filter: invert(10%) sepia(69%) saturate(3778%) hue-rotate(230deg) brightness(90%) contrast(95%);
+}.menu {
+
+    padding: 10px 0px 20px 0px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu ul li{
+    margin-left: 25px;
+    transition: all linear 0.2s;
+}
+.menu ul li a:hover{
+    color: rgb(191,54,12);
+}
+.menu ul li:nth-child(4):hover ul{
+    opacity: 0.9;
+    visibility: visible;
+}
+.menu ul li a{
+    color: #f5f5f5;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 0px;
+    transition: all linear 0.2s;
+}
+.menu ul li ul{
+    position: fixed;
+    width: 100dvw;
+    top:138.75px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.706);
+    border: 1px solid rgb(33,33,33);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.4s;
+}
+.menu ul li ul li{
+    margin-left: 0px !important;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.menu ul li ul li:hover{
+    background: transparent;
+    backdrop-filter: blur(4px);
+}
+.menu ul li ul li:hover a{
+    color: rgb(191,54,12);
+    letter-spacing: 3px;
+}
+.menu ul li ul li:hover:nth-child(3) a{
+    letter-spacing: 2.5px;
+}
+.menu ul li ul li:hover:nth-child(4) a{
+    letter-spacing: 2.5px;
+}
+.menu ul li ul li a{
+    font-size: 13px;
+    line-height: 0px !important;
+} 
+
+/* Header Part :end */
+/* Banner Part :start */
+#banner{
+    width: 100dvw;
+    background: url(../images/gymdesign-rackstation-5.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+}
+.overlay {
+    background-color: rgb(2,136,209);
+    mix-blend-mode: overlay;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.banner_txt{
+    padding-top: 240px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.banner_txt h1{
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Shrikhand', cursive;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(189,189,189);
+    background: url(../images/Galaxy.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: move 20s linear infinite;
+    padding-bottom: 19px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+@keyframes move{
+    100%{
+        background-position:0 2000px;
+    }
+}
+.banner_txt p{
+    font-weight:500;
+    font-size: 38px;
+    font-family: 'Passion One', cursive;
+    color:rgb(255,167,38);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-left: 2px;
+}
+.banner_txt p span{
+    color: #d50000;
+    margin-left: 0px;
+}
+
+/* Banner Part :end */
+
+/* ========WarmUps Part======== */
+#warmups{
+    position: relative;
+    padding: 20px 0px;
+}
+.warmups_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100%;
+    background-color:#b0bec5;
+    mix-blend-mode: color;
+    z-index: -1111;
+}
+#warmups .Exercises_heading h2{
+    font-weight: 400;
+    font-size: 60px;
+    font-family: 'Shrikhand', cursive;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(192, 96, 160, 0.704);
+    background: url(../images/shattered-time-broken-glass-gears-wallpaper-preview\ \(2\).jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: leg 40s linear infinite;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+/* ========WarmUps Part======== */
+/* Bysep Part */
+#bysep{
+    position: relative;
+    background:url(../images/Bycep\ Bg\ \(1\).png) no-repeat center;
+    background-attachment: fixed;
+    block-size: cover;
+    padding: 20px 0px;
+    
+}
+.bysep_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100dvw;
+    height: 100%;
+    background-color:#b0bec5;
+    mix-blend-mode: color;
+
+    z-index: -1111;
+}
+/* Bg For ByOverlay  */
+
+/* Bg For ByOverlay  */
+
+.exercise{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.exercise_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.exercise_heading img{
+    filter: invert(85%) sepia(96%) saturate(284%) hue-rotate(307deg) brightness(101%) contrast(103%);
+}
+.exercise_heading h2{
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Shrikhand', cursive;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(189,189,189);
+    background: url(../images/Biceps.webp);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: leg 20s linear infinite;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.Exercises{
+    display: flex;
+    flex-direction: column;
+    /* background: #f5f5f5; */
+}
+.Exercises ul{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    list-style-type: circle;
+}
+.Exercises ul li:nth-child(3){
+    padding: 20px 0px;
+}
+.Exercises ul li{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+}
+.Exercises_variation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.Exercises_variation h2{
+    color:#0319DA;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-left: 30px;
+    z-index: 2222;
+}
+.Exercises_heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rate{
+    padding: 0px 10px;
+}
+.rate i{
+    color:#ffee58;
+    font-size: 20px;
+}
+/* Bysep Part */
+
+/* ========Leg Part ======== */
+
+#leg{
+    position: relative;
+    background:url(../images/Leg\ BG.png) no-repeat center;
+    background-attachment: fixed;
+    block-size: cover;
+    padding: 20px 0px;
+}
+.leg_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100%;
+    background-color:#b0bec5;
+    mix-blend-mode: color;
+    z-index: -1111;
+}
+#leg .exercise_heading{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+#leg .exercise_heading img{
+    filter: invert(28%) sepia(58%) saturate(4570%) hue-rotate(268deg) brightness(83%) contrast(156%);
+}
+#leg .exercise_heading h2{
+    background: url(../images/Warmup\ bg.jpg);
+    -webkit-background-clip: text;
+}
+@keyframes leg{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+/* ========Leg Part ======== */
+
+/* ========Shoulder======= */
+#del{
+    position: relative;
+    background:url(../images/Leg\ BG.png) no-repeat center;
+    background-attachment: fixed;
+    block-size: cover;
+    padding: 20px 0px;
+}
+.del_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100%;
+    background-color:#b0bec5;
+    mix-blend-mode: color;
+    z-index: -1111;
+}
+#del .exercise_heading{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+#del .exercise_heading h2{
+    background: url(../images/Shoulder.jpg);
+    -webkit-background-clip: text;
+    font-size: 60px;
+}
+@keyframes leg{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+/* ========Shoulder======= */
+
+
+/* ========Back Part======== */
+#back{
+    position: relative;
+    background:url(../images/Back\ BG.png) no-repeat center;
+    background-attachment: fixed;
+    block-size: cover;
+    padding: 20px 0px;
+}
+#back .exercise_heading img{
+    width: 170px;
+    height: 170px;
+}
+#back .exercise_heading h2{
+    background: url(../images/B\ H\ Bg.jpg);
+    -webkit-background-clip: text;
+}
+.back_overlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100%;
+    background-color:#b0bec5;
+    mix-blend-mode: color;
+    z-index: -1111;
+}
+/* ========Back Part======== */

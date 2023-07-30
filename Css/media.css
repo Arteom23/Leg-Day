@@ -1,0 +1,196 @@
+@media (max-width:375px){
+    /* navbar part start===========> */
+    .container {
+        width: 90%;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        line-height: 0px;
+    }
+    .logo{
+        justify-content: space-between;
+        cursor: pointer;
+        align-items: center;
+    }
+    .menu {
+        padding: 10px 0px;
+    }
+    .menu ul{
+        padding-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul li {
+        margin-left: 0px;
+        margin-top: 20px;
+        padding: 7px 0px;
+    }
+    .menu ul li a {
+        font-size: 13px;
+        line-height: 0px !important;
+    }
+    .menu ul li ul{
+        position:fixed ;
+        width: 100dvw;
+        height: 200px;
+        top: 240px;
+        left:0px;
+        background: #000;
+        z-index: 1111;
+        flex-direction: column;
+    }
+    .menu ul li ul li{
+        margin-left: 0px !important;
+        padding: 3px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    /* ==========navbar part end*/
+
+     /* Banner part start===========> */
+     .banner_txt {
+        padding-top: 170px;
+        padding-bottom: 130px;
+    }
+    .banner_txt h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .banner_txt h2{
+        font-size: 20px;
+    }
+    .banner_txt p {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 17px;
+        margin-left: 2px;
+    }
+    /* ======Warmup Part======= */
+    #warmups .Exercises_heading h2 {
+        font-size: 34px;
+    }
+    #warmups .Exercises_variation h2 {
+        text-align: center;
+    }
+    /* ======Warmup Part======= */
+
+
+    /* ========Back to Top======= */
+    .back_to_top {
+        bottom: 28px;
+        right: 19px;
+    }
+    .back_to_top img{
+        width: 30px;
+        height: 70px;
+    }
+    /* ========Back to Top======= */
+
+
+     /* <==========Banner part end*/
+    .exercise_heading h2{
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 7px;
+        margin-left: 20px;
+       text-align: center;
+    }
+    .Exercises_variation{
+        justify-content: start;
+    }
+    .Exercises_variation h2{
+        font-size: 19px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        margin-left: 17px;
+        text-align: center;
+    }
+    .rate i{
+        font-size: 13px !important;
+        text-align: center;
+    }
+    .Exercises:nth-child(3) ul{
+        padding: 30px 0px;
+    }
+    .Exercises:nth-child(3) ul li{
+        padding: 17px 0px;
+    }
+    .Exercises:nth-child(4){
+        padding: 40px 0px;
+    }
+    .Exercises{
+        padding: 20px 0px;
+    }
+    .Exercises ul li{
+        padding: 13px 0px;
+    }
+    .rate{
+        padding-left: 13px;
+    }
+    /* <===================Bysep Part Start */
+    #bysep .exercise_heading img {
+        width: 102px;
+        height: 102px;
+    }
+    #bysep .Exercises:nth-child(3) .Exercises_heading img {
+        width: 144px;
+        height: 177px;
+    }
+    #bysep .Exercises:nth-child(4) .Exercises_heading img {
+        width: 280px;
+        height: 260px;
+    }
+
+    /* <===================Bysep Part Start */
+    /* <===================Back Part Start */
+    
+    #back .exercise_heading img {
+        width: 102px;
+        height: 102px;
+    }
+    #back .Exercises:nth-child(3) .Exercises_heading img {
+        width: 144px;
+        height: 177px;
+    }
+    #back .Exercises:nth-child(5) .Exercises_heading img {
+        width: 144px;
+        height: 177px;
+    }
+    #back .Exercises:last-child .Exercises_heading img {
+        width: 201px;
+        height: 201px;
+    }
+    /* <===================Back Part Start */
+    /* <============Leg Part Start==========> */
+    #leg .exercise_heading img {
+        width: 102px;
+        height: 102px;
+    }
+    #leg .Exercises:nth-child(3) .Exercises_heading img {
+        width: 177px;
+        height: 177px;
+    }
+    /* <============Leg Part End==========> */
+    #del .exercise_heading img {
+        width: 102px;
+        height: 102px;
+    }
+    #del .exercise_heading h2 {
+        font-size: 28px;
+    }
+    #del .Exercises:last-child .Exercises_heading img {
+        width: 201px;
+        height: 201px;
+    }
+        /* <============Del Part Start==========> */
+
+        /* <============Del Part End==========> */
+        /* <============Footer Part End==========> */
+
+        /* <============Footer Part End==========> */
+
+
+}
